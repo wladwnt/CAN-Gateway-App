@@ -37,9 +37,8 @@ jobs:
     #- run: flutter test
     
     # Build apk.
-    - run: echo "${{ secrets.KEYSTORE_JKS_PROD }}" | base64 --decode > upload-keystore.jks
+    - run: echo "${{ secrets.KEYSTORE_JKS_PROD }}" | base64 --decode > android/app/upload-keystore.jks
     - run: echo "${{ secrets.KEY_PROPERTIES_PROD }}" | base64 --decode > android/key.properties
-    - run: ls -a android/app
     
     - run: flutter build apk
     
