@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import "package:upnp/upnp.dart";
+import "package:upnp_ns/upnp.dart";
 
 class DevicesProvider extends ChangeNotifier {
   int length = 0;
