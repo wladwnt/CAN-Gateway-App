@@ -38,7 +38,7 @@ jobs:
     
     # Build
     - name: Build iOS App
-        run: |
+      run: |
           flutter build ios --no-codesign
           cd build/ios/iphoneos
           mkdir Payload
