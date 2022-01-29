@@ -70,7 +70,10 @@ unlinked_spec.ds
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
-# *.jks
+**/android/key_for_github.properties
+**/android/your_signing_keystore_base64_encoded.txt
+**/android/your_signing_keyproperties_base64_encoded.txt
+*.jks
 
 # iOS/XCode related
 **/ios/**/*.mode1v3

@@ -446,13 +446,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.4"
-  upnp:
+  upnp_ns:
     dependency: "direct dev"
     description:
-      name: upnp
+      name: upnp_ns
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.1"
+    version: "1.0.1"
   url_launcher:
     dependency: "direct dev"
     description:

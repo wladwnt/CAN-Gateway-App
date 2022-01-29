@@ -34,9 +34,12 @@ jobs:
     #- run: flutter analyze .
     
     # Run widget tests for our flutter project.
-    - run: flutter test
+    #- run: flutter test
     
     # Build apk.
+    - run: echo "${{ secrets.KEYSTORE_JKS_PROD }}" | base64 --decode > android/keystore.jks
+    - run: echo "${{ secrets.KEY_PROPERTIES_PROD }}" | base64 --decode > android/key.properties
+    
     - run: flutter build apk
     
     # Upload generated apk to the artifacts.
